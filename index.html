@@ -240,14 +240,21 @@
 
   .store{
     background:var(--bg-elevated);
-    padding:18px 20px;
+    padding:16px 18px;
   }
 
   .store-name{
     font-size:13.5px;
     font-weight:600;
     color:var(--text-primary);
-    margin-bottom:6px;
+    margin-bottom:12px;
+  }
+
+  .store-info{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    gap:18px;
+    align-items:start;
   }
 
   .store-address{
@@ -257,14 +264,15 @@
   }
 
   .store-phone{
-    margin-top:10px;
-    padding-top:10px;
-    border-top:1px solid var(--border-soft);
     font-size:12.5px;
     color:var(--text-secondary);
+    text-align:right;
+    white-space:nowrap;
   }
 
   .store-phone span{
+    display:block;
+    margin-bottom:2px;
     color:var(--text-muted);
     font-size:11px;
     font-weight:700;
@@ -321,6 +329,8 @@
     .card{padding:26px 20px;}
     .wordmark{font-size:22px;}
     .store-grid{grid-template-columns:1fr;}
+    .store-info{grid-template-columns:1fr;gap:8px;}
+    .store-phone{text-align:left;}
     .stat-value{font-size:24px;}
   }
 </style>
@@ -381,33 +391,45 @@
       <div class="store-grid">
         <div class="store">
           <div class="store-name">adidas MalatyaPark AVM</div>
-          <div class="store-address">İnönü, Park AVM, İnönü Cd. No:192 2. KAT, 44000 Yeşilyurt/Malatya</div>
-          <div class="store-phone"><span>İrtibat No</span><br><a href="tel:+904222113008">0422 211 30 08</a></div>
+          <div class="store-info">
+            <div class="store-address">İnönü, Park AVM, İnönü Cd. No:192 2. KAT, 44000 Yeşilyurt/Malatya</div>
+            <div class="store-phone"><span>İrtibat No</span><a href="tel:+904222113008">0422 211 30 08</a></div>
+          </div>
         </div>
         <div class="store">
           <div class="store-name">adidas Kahramanmaraş Piazza</div>
-          <div class="store-address">Şazi Bey, Haydar Aliyev Blv. No:3 1. Kat, 46040 Onikişubat/Kahramanmaraş</div>
-          <div class="store-phone"><span>İrtibat No</span><br><a href="tel:+903442350346">0344 235 03 46</a></div>
+          <div class="store-info">
+            <div class="store-address">Şazi Bey, Haydar Aliyev Blv. No:3 1. Kat, 46040 Onikişubat/Kahramanmaraş</div>
+            <div class="store-phone"><span>İrtibat No</span><a href="tel:+903442350346">0344 235 03 46</a></div>
+          </div>
         </div>
         <div class="store">
           <div class="store-name">adidas Osmaniye Park328 Mall</div>
-          <div class="store-address">Adnan Menderes, Adnan Menderes Blv. No:17 Zemin Kat - No: 38, 80010 Osmaniye Merkez/Osmaniye</div>
-          <div class="store-phone"><span>İrtibat No</span><br><a href="tel:+903287901180">0328 790 11 80</a></div>
+          <div class="store-info">
+            <div class="store-address">Adnan Menderes, Adnan Menderes Blv. No:17 Zemin Kat - No: 38, 80010 Osmaniye Merkez/Osmaniye</div>
+            <div class="store-phone"><span>İrtibat No</span><a href="tel:+903287901180">0328 790 11 80</a></div>
+          </div>
         </div>
         <div class="store">
           <div class="store-name">Winsport Trump AVM</div>
-          <div class="store-address">Mecidiyeköy, Mecidiyeköy Yolu Cd. No:12, 34400 Şişli/İstanbul</div>
-          <div class="store-phone"><span>İrtibat No</span><br><a href="tel:+902124610106">0212 461 01 06</a></div>
+          <div class="store-info">
+            <div class="store-address">Mecidiyeköy, Mecidiyeköy Yolu Cd. No:12, 34400 Şişli/İstanbul</div>
+            <div class="store-phone"><span>İrtibat No</span><a href="tel:+902124610106">0212 461 01 06</a></div>
+          </div>
         </div>
         <div class="store">
           <div class="store-name">adidas Şanlıurfa Piazza</div>
-          <div class="store-address">Karakoyunlu, 11 Nisan Fuar Cd. Piazza AVM No:42 ALT KAT, 63200 Merkez/Şanlıurfa</div>
-          <div class="store-phone"><span>İrtibat No</span><br><a href="tel:+904142154373">0414 215 43 73</a></div>
+          <div class="store-info">
+            <div class="store-address">Karakoyunlu, 11 Nisan Fuar Cd. Piazza AVM No:42 ALT KAT, 63200 Merkez/Şanlıurfa</div>
+            <div class="store-phone"><span>İrtibat No</span><a href="tel:+904142154373">0414 215 43 73</a></div>
+          </div>
         </div>
         <div class="store">
           <div class="store-name">adidas Serisonu Mağazası</div>
-          <div class="store-address">100. Yıl Mah. Dr. Sadık Ahmet Blv. 85002 Sk. NO:13</div>
-          <div class="store-phone"><span>İrtibat No</span><br><a href="tel:+904445227">444 5 227</a></div>
+          <div class="store-info">
+            <div class="store-address">100. Yıl Mah. Dr. Sadık Ahmet Blv. 85002 Sk. NO:13</div>
+            <div class="store-phone"><span>İrtibat No</span><a href="tel:+904445227">444 5 227</a></div>
+          </div>
         </div>
       </div>
 
